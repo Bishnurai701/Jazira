@@ -1,0 +1,8 @@
+E:\JaziraManagement\Jazira\Jazira\bin\Jazira.dll
+E:\JaziraManagement\Jazira\Jazira\bin\Jazira.pdb
+E:\JaziraManagement\Jazira\Jazira\obj\Debug\Jazira.csprojResolveAssemblyReference.cache
+E:\JaziraManagement\Jazira\Jazira\obj\Debug\Jazira.dll
+E:\JaziraManagement\Jazira\Jazira\obj\Debug\Jazira.pdb
+E:\Project\JaziraManagement\Jazira\Jazira\obj\Debug\Jazira.csprojResolveAssemblyReference.cache
+E:\Projectss\JaziraManagement\Jazira\Jazira\obj\Debug\Jazira.csprojAssemblyReference.cache
+E:\Projectss\JaziraManagement\Jazira\Jazira\obj\Debug\Jazira.csproj.CoreCompileInputs.cache

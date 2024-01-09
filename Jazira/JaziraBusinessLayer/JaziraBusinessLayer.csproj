@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C0A7572-1ED4-47EE-9F69-B61926BA56EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JaziraBusinessLayer</RootNamespace>
+    <AssemblyName>JaziraBusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Admin\LoginBLL.cs" />
+    <Compile Include="BLL\General\CountryBLL.cs" />
+    <Compile Include="BLL\General\DistrictBLL.cs" />
+    <Compile Include="BLL\General\GoldTypeBLL.cs" />
+    <Compile Include="BLL\General\GroupCodeBLL.cs" />
+    <Compile Include="BLL\General\GroupMasterMaintenaceBLL.cs" />
+    <Compile Include="BLL\General\ItemMaintenanceBLL.cs" />
+    <Compile Include="BLL\General\MasterOrnamentBLL.cs" />
+    <Compile Include="BLL\General\ReligionBLL.cs" />
+    <Compile Include="BLL\General\SalaryTypeBLL.cs" />
+    <Compile Include="BLL\General\SectionBLL.cs" />
+    <Compile Include="BLL\General\ShiftBLL.cs" />
+    <Compile Include="BLL\General\StateBLL.cs" />
+    <Compile Include="BLL\General\StoneClearityBLL.cs" />
+    <Compile Include="BLL\General\StoneColorBLL.cs" />
+    <Compile Include="BLL\General\StoneShapeBLL.cs" />
+    <Compile Include="BLL\General\StoneShapeCUTBLL.cs" />
+    <Compile Include="BLL\General\TypeBLL.cs" />
+    <Compile Include="BLL\General\TypeDetailBLL.cs" />
+    <Compile Include="BLL\General\WorkingSectionBLL.cs" />
+    <Compile Include="BLL\Security\FormMasterBLL.cs" />
+    <Compile Include="BLL\Security\FormPermissionBLL.cs" />
+    <Compile Include="BLL\Security\UserBLL.cs" />
+    <Compile Include="BLL\Security\UserGroupBLL.cs" />
+    <Compile Include="BLL\Security\UserTypeBLL.cs" />
+    <Compile Include="BLL\UserGroupBLL.cs" />
+    <Compile Include="BLL\UserTypeBLL.cs" />
+    <Compile Include="DLL\Admin\LoginDLL.cs" />
+    <Compile Include="DLL\General\CountryDLL.cs" />
+    <Compile Include="DLL\General\DistrictDLL.cs" />
+    <Compile Include="DLL\General\GoldTypeDLL.cs" />
+    <Compile Include="DLL\General\GroupCodeDLL.cs" />
+    <Compile Include="DLL\General\GroupMasterMaintenaceDLL.cs" />
+    <Compile Include="DLL\General\ItemMaintenanceDLL.cs" />
+    <Compile Include="DLL\General\MasterOrnamentDLL.cs" />
+    <Compile Include="DLL\General\ReligionDLL.cs" />
+    <Compile Include="DLL\General\SalaryTypeDLL.cs" />
+    <Compile Include="DLL\General\SectionDLL.cs" />
+    <Compile Include="DLL\General\ShiftDLL.cs" />
+    <Compile Include="DLL\General\StateDLL.cs" />
+    <Compile Include="DLL\General\StoneClearityDLL.cs" />
+    <Compile Include="DLL\General\StoneColorDLL.cs" />
+    <Compile Include="DLL\General\StoneShapeCUTDLL.cs" />
+    <Compile Include="DLL\General\StoneShapeDLL.cs" />
+    <Compile Include="DLL\General\TypeDetailDLL.cs" />
+    <Compile Include="DLL\General\TypeDLL.cs" />
+    <Compile Include="DLL\General\WorkingSectionDLL.cs" />
+    <Compile Include="DLL\Security\EncryptDecryptDLL.cs" />
+    <Compile Include="DLL\Security\FormMasterDLL.cs" />
+    <Compile Include="DLL\Security\FormPermissionDLL.cs" />
+    <Compile Include="DLL\Security\Interface\ISecurity.cs" />
+    <Compile Include="DLL\Security\UserDLL.cs" />
+    <Compile Include="DLL\Security\UserGroupDLL.cs" />
+    <Compile Include="DLL\Security\UserTypeDLL.cs" />
+    <Compile Include="DLL\UserGroupDLL.cs" />
+    <Compile Include="DLL\UserTypeDLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JaziraDatabaseLayer\JaziraDatabaseLayer.csproj">
+      <Project>{2431D3A1-0DF8-45E7-BBB2-288D083A322E}</Project>
+      <Name>JaziraDatabaseLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\JaziraBusinessLayer.dll" />
+    <Content Include="bin\Debug\JaziraBusinessLayer.pdb" />
+    <Content Include="obj\Debug\JaziraBusinessLayer.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\JaziraBusinessLayer.dll" />
+    <Content Include="obj\Debug\JaziraBusinessLayer.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\JaziraBusinessLayer.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

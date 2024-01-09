@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jazira", "Jazira\Jazira.csproj", "{57A9D2FD-B530-4763-8B1B-6ACA8769ACAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaziraBusinessLayer", "JaziraBusinessLayer\JaziraBusinessLayer.csproj", "{8C0A7572-1ED4-47EE-9F69-B61926BA56EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaziraDatabaseLayer", "JaziraDatabaseLayer\JaziraDatabaseLayer.csproj", "{2431D3A1-0DF8-45E7-BBB2-288D083A322E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57A9D2FD-B530-4763-8B1B-6ACA8769ACAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A9D2FD-B530-4763-8B1B-6ACA8769ACAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A9D2FD-B530-4763-8B1B-6ACA8769ACAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A9D2FD-B530-4763-8B1B-6ACA8769ACAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0A7572-1ED4-47EE-9F69-B61926BA56EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0A7572-1ED4-47EE-9F69-B61926BA56EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0A7572-1ED4-47EE-9F69-B61926BA56EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0A7572-1ED4-47EE-9F69-B61926BA56EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2431D3A1-0DF8-45E7-BBB2-288D083A322E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2431D3A1-0DF8-45E7-BBB2-288D083A322E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2431D3A1-0DF8-45E7-BBB2-288D083A322E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2431D3A1-0DF8-45E7-BBB2-288D083A322E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

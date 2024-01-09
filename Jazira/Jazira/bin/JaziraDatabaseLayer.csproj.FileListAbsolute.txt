@@ -1,0 +1,5 @@
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\bin\Debug\JaziraDatabaseLayer.dll
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\bin\Debug\JaziraDatabaseLayer.pdb
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.csprojResolveAssemblyReference.cache
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.dll
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.pdb

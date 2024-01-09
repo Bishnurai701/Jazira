@@ -1,0 +1,405 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cash.master.cs" Inherits="Jazira.CashManagement.Cash" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> Cash Management </title>
+     <%@ Register TagPrefix="ajax" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+
+     <!-- bootstrap css-->
+    <link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+     <!-- bootstrap js-->
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+     <!-- bootstrap32 dist-css-->
+    <link href="../bootstrapv32/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../bootstrapv32/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../bootstrapv32/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrapv32/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrapv32/docs/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrapv32/docs/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+     <!-- bootstrap dist-js-->
+    <script src="../bootstrapv32/dist/js/bootstrap.js"></script>
+    <script src="../bootstrapv32/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap dist-js-->
+    <script src="../bootstrapv32/docs/assets/js/customize.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/docs.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/raw-files.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/blob.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/filesaver.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/holder.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/jszip.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/less.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/uglify.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/ZeroClipboard.min.js"></script>
+
+
+     <!-- bootstrap grunt-js-->
+    <script src="../bootstrapv32/js/affix.js"></script>
+    <script src="../bootstrapv32/js/alert.js"></script>
+    <script src="../bootstrapv32/js/button.js"></script>
+    <script src="../bootstrapv32/js/carousel.js"></script>
+    <script src="../bootstrapv32/js/collapse.js"></script>
+    <script src="../bootstrapv32/js/dropdown.js"></script>
+    <script src="../bootstrapv32/js/modal.js"></script>
+    <script src="../bootstrapv32/js/popover.js"></script>
+    <script src="../bootstrapv32/js/scrollspy.js"></script>
+    <script src="../bootstrapv32/js/tab.js"></script>
+    <script src="../bootstrapv32/js/tooltip.js"></script>
+    <script src="../bootstrapv32/js/transition.js"></script>
+     <!-- bootstrap content-js-->
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+     <!-- bootstrap content-base-js-for progressbar-->
+    <link href="../Content/themes/base/accordion.css" rel="stylesheet" />
+    <link href="../Content/themes/base/button.css" rel="stylesheet" />
+    <link href="../Content/themes/base/datepicker.css" rel="stylesheet" />
+    <link href="../Content/themes/base/draggable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/menu.css" rel="stylesheet" />
+    <link href="../Content/themes/base/progressbar.css" rel="stylesheet" />
+    <link href="../Content/themes/base/resizable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/selectable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/selectmenu.css" rel="stylesheet" />
+    <link href="../Content/themes/base/slider.css" rel="stylesheet" />
+    <link href="../Content/themes/base/sortable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/spinner.css" rel="stylesheet" />
+    <link href="../Content/themes/base/tabs.css" rel="stylesheet" />
+    <link href="../Content/themes/base/theme.css" rel="stylesheet" />
+    <link href="../Content/themes/base/tooltip.css" rel="stylesheet" />
+     <!-- fontawesomr css-->
+    <link href="../font-awesome/css/font-awesome-ie7.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- msAjax minifield-js-->
+    <script src="../msAjax/plugin/minifield/bootstrap.js"></script>
+    <script src="../msAjax/plugin/minifield/bootstrap.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-1.9.1.intellisense.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-1.9.1.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-1.9.1.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.intellisence.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.ui.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.ui.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.validate-vsdoc.js"></script>
+    <script src="../msAjax/plugin/minifield/knockout-2.2.0.debug.js"></script>
+    <script src="../msAjax/plugin/minifield/knockout-2.2.0.js"></script>
+    <script src="../msAjax/plugin/minifield/modernizr-2.6.2.js"></script>
+    <script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.js"></script>
+    <script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.min.js"></script>
+     <!-- msAjax css-->
+    <link href="../msAjax/Theme/base/jquery-ui.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.accordion.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.all.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.base.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.button.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.core.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.dialog.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.progressbar.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.resizable.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.selectable.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.slider.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.tabs.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.theme.css" rel="stylesheet" />
+     <!-- msAjax-minifiled css-->
+    <link href="../msAjax/Theme/base/minifield/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.accordion.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.autocomplete.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.button.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.core.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.datepicker.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.dialog.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.progressbar.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.resizable.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.selectable.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.slider.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.tabs.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.theme.min.css" rel="stylesheet" />
+     <!-- script js-->
+    <script src="../script/_references.js"></script>
+    <script src="../script/bootstrap.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/jquery-1.10.2.intellisense.js"></script>
+    <script src="../script/jquery-1.10.2.js"></script>
+    <script src="../script/jquery-1.10.2.min.js"></script>
+    <script src="../script/modernizr-2.6.2.js"></script>
+    <script src="../script/respond.js"></script>
+    <script src="../script/respond.min.js"></script>
+    <script src="../Scripts/alert.js"></script>
+    <script src="../Scripts/jquery-1.10.2-vsdoc.js"></script>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../Scripts/jquery-1.3.2.min.js"></script>
+    <script src="../Scripts/jquery-2.1.1-vsdoc.js"></script>
+    <script src="../Scripts/jquery-2.1.1.intellisense.js"></script>
+    <script src="../Scripts/jquery-2.1.1.js"></script>
+    <script src="../Scripts/jquery-2.1.1.min.js"></script>
+    <script src="../Scripts/jquery-ui-1.11.1.js"></script>
+    <script src="../Scripts/jquery-ui.min-1.11.1.js"></script>
+    <script src="../Scripts/jquery.blockUI.js"></script>
+     <!-- Style css-->
+    <link href="../style/FileUpload.css" rel="stylesheet" />
+    <link href="../style/ReportViewer.css" rel="stylesheet" />
+    <link href="../style/site.css" rel="stylesheet" />
+    <link href="../style/style.css" rel="stylesheet" />
+
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!--plugin-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>$.support.transition = false</script>
+        <script src="../Scripts/alert.js"></script>
+        <script src="../Scripts/button.js"></script>
+        <script src="../Scripts/collapse.js"></script>
+        <script src="../Scripts/dropdown.js"></script>
+       <script src="../Scripts/modal.js"></script>
+        <script src="../Scripts/popover.js"></script>
+        <script src="../Scripts/scrollspy.js"></script>
+        <script src="../Scripts/tab.js"></script>
+        <script src="../Scripts/tooltip.js"></script>
+        <script src="../Scripts/transition.js"></script>
+
+        <!--this is new bootstrap-->
+        <script src="../msAjax/plugin/minifield/bootstrap.js"></script>
+        <script src="../msAjax/plugin/minifield/bootstrap.min.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-1.9.1.intellisense.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-1.9.1.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-1.9.1.min.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.min.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery.intellisence.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery.js">
+        </script><script src="../msAjax/plugin/minifield/jquery.min.js">
+        </script><script src="../msAjax/plugin/minifield/jquery.ui.js">
+        </script><script src="../msAjax/plugin/minifield/jquery.ui.min.js">
+
+                          </script><script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.js"></script><script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.min.js"></script><script src="../msAjax/plugin/minifield/jquery.validate-vsdoc.js"></script><script src="../msAjax/plugin/minifield/knockout-2.2.0.debug.js"></script><script src="../msAjax/plugin/minifield/knockout-2.2.0.js"></script><script src="../msAjax/plugin/minifield/modernizr-2.6.2.js"></script><script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.js"></script><script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.min.js"></script>
+       
+         <link href="../msAjax/Theme/base/jquery-ui.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.accordion.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.all.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.base.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.button.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.core.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.datepicker.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.dialog.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.progressbar.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.resizable.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.selectable.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.slider.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.tabs.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.theme.css" rel="stylesheet" />
+
+        <link href="../bootstrapv32/dist/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="../bootstrapv32/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="../bootstrapv32/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="../bootstrapv32/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="../bootstrapv32/dist/js/bootstrap.js"></script>
+        <script src="../bootstrapv32/dist/js/bootstrap.min.js"></script>
+
+        <script src="../bootstrapv32/grunt/bs-glyphicons-data-generator.js"></script>
+        <script src="../bootstrapv32/grunt/bs-lessdoc-parser.js"></script>
+        <script src="../bootstrapv32/grunt/bs-raw-files-generator.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../script/bootstrap.js"></script>
+        <script src="../script/bootstrap.min.js"></script>
+        <script src="../script/jquery-1.10.2.intellisense.js"></script>
+        <script src="../script/jquery-1.10.2.js"></script>
+        <script src="../script/jquery-1.10.2.min.js"></script>
+        <script src="../script/modernizr-2.6.2.js"></script>
+        <script src="../script/respond.js"></script>
+        <script src="../script/respond.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../Scripts/bootstrap.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script src="../msAjax/plugin/minifield/bootstrap.js"></script>
+        <script src="../msAjax/plugin/minifield/bootstrap.min.js"></script>
+
+        <link href="../style/site.css" rel="stylesheet" />
+        <link href="../style/style.css" rel="stylesheet" />
+
+    <link href="../bootstrap-3.0.3/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../bootstrap-3.0.3/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../bootstrap-3.0.3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+ 
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         <script  type="text/javascript">
+             $(function () {
+
+                 $('#side-menu').metisMenu();
+
+             })
+          </script>
+            <script type="text/javascript">
+                $(function () {
+                    $(window).bind("load resize", function () {
+                        topOffset = 50;
+                        width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+                        if (width < 768) {
+                            $('div.navbar-collapse').addClass('collapse')
+                            topOffset = 100; // 2-row-menu
+                        } else {
+                            $('div.navbar-collapse').removeClass('collapse')
+                        }
+
+                        height = (this.window.innerHeight > 0) ? this.window.innerHeight : this.screen.height;
+                        height = height - topOffset;
+                        if (height < 1) height = 1;
+                        if (height > topOffset) {
+                            $("#page-wrapper").css("min-height", (height) + "px");
+                        }
+                    })
+                })
+         </script>
+         <script type="text/javascript">
+             $(document).ready(function () {
+
+                 $("select").searchable({
+                     maxListSize: 100,
+                     maxMultiMatch: 50,
+                     exactMatch: false,                      // Exact matching on search
+                     wildcards: true,
+                     ignoreCase: true,
+                     latency: 200,
+                     warnMultiMatch: 'top {0} matches ...',
+                     warnNoMatch: 'no matches ...',
+                     zIndex: 'auto'
+                 });
+             });
+
+        </script>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div class="page">
+            <nav class="navbar">
+                <div class="navbar-inner">
+                    <div class=" container">
+                        <div class="row">
+                            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                            <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></a>
+                            <!-- Be sure to leave the brand out there if you want it shown -->
+                            <a class="navbar-brand" href="AdministratorDash.aspx" style="color: brown; font-size: 27px;">
+                                <img src="../image/logo.gif" style="width: 70px; height: 35px;" />
+                                Jazira Jewelry Management System
+                            </a>
+                            <ul class="nav navbar-top-links navbar-right">
+                                <li><a href="../Admin/Login.aspx"><i class="fa fa-sign-out"></i>Logout</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                                        </li>
+                                    </ul><!-- /.dropdown-user -->
+                                </li><!-- /.dropdown -->
+                            </ul>
+                        </div><!-- Everything you want hidden at 940px or less, place within here -->
+                    </div><!-- /.container -->
+                </div><!-- /.navbar-inner -->
+            </nav><!-- /.navbar -->
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="well">
+                            <ul id="Ul1" runat="server" class="nav navbar-list">
+                                <%-- id="list"--%>
+                                <li runat="server" id="liDashBoard">
+                                    <a href="../About.aspx"><i class="fa fa-th"></i><%--icon-dashboard  icon-2x--%>
+                                        <b>&nbsp;Dash Board</b>
+                                    </a>
+                                </li>
+                                <li class="nav nav-header"><i class="fa fa-cogs"></i>&nbsp;Master</li>
+                                <li runat="server" id="liGoldInventoryDashBoard"><a href="../GoldInventory/GoldInventoryDashBoard.aspx"><i class="fa fa-calendar-o"></i>&nbsp;Gold Inventory</a></li>
+                                <li runat="server" id="liSilverDashBoard"><a href="../SilverInventory/SilverDashBoard.aspx"><i class="fa fa-male"></i>&nbsp;Silver Inventory </a></li>
+                                <li runat="server" id="liCourierDashBoard"><a href="CourierDashBoard.aspx"><i class="fa fa-plane"></i>&nbsp;Courier Management</a></li>
+                                <li runat="server" id="liBarcodeDashBoard"><a href="BarcodeDashBoard.aspx"><i class="fa fa-barcode"></i>&nbsp;Barcode Management</a></li>
+                                <li runat="server" id="liHRDashBoard"><a href="../HRManagement/HRDashBoard.aspx"><i class="fa fa-tags"></i>&nbsp;HR Management</a></li>
+                                <li runat="server" id="liVehicleDashBoard"><a href="../VehicleManagement/VehicleDashBoard.aspx"><i class="fa fa-folder-open-o"></i>&nbsp;Vehicle Management</a></li>
+                                <li runat="server" id="liToolsDashBoard"><a href="../ToolsManagement/ToolsDashBoard.aspx"><i class="fa fa-pencil-square"></i>&nbsp;Tools Management</a></li>
+                                <li runat="server" id="liDailyDashBoard"><a href="../DailyBalance/DailyDashBoard.aspx"><i class="fa fa-sitemap"></i>&nbsp;Daily Balance</a></li>
+                                <li runat="server" id="liAccountDashBoard"><a href="../Account/AccountDashBoard.aspx"><i class="fa fa-briefcase"></i>&nbsp;Account</a></li>
+                                <li runat="server" id="liCashDashBoard"><a href="CashDashBoard.aspx"><i class="fa fa-file-text"></i>&nbsp;Cash Management</a></li>
+                                <li runat="server" id="liTimeDashBoard"><a href="../TimeManagement/TimeDashBoard.aspx"><i class="fa fa-calendar-o"></i>&nbsp;Time Management</a></li>
+
+                                <li class="nav nav-header"><i class="fa fa-unlock-alt"></i>&nbsp;Security </li>
+                                <li runat="server" id="liGeneral"><a href="../General/GeneralDashBoard.aspx"><i class="fa fa-cog fa-fw"></i>&nbsp;Configuration</a></li>
+
+                                <li class="nav nav-header"><i class="fa fa-briefcase"></i>&nbsp;Account</li>
+                                <li runat="server" id="liLedger"><a href="Newladeger.aspx"><i class="fa fa-link"></i>&nbsp;Ledger</a></li>
+                                <li runat="server" id="liLedgerGroup"><a href="NewLedgerGroup.aspx"><i class="fa fa-link"></i>&nbsp;Ledger Group</a></li>
+                                <li runat="server" id="li1"><a href="TblDeposit.aspx"><i class="fa fa-link"></i>&nbsp;DEPOSIT</a></li>
+
+                                <li class="nav nav-header"><i class="fa fa-file-text-o"></i>&nbsp;Report</li>
+                            </ul>
+                        </div>
+                        <%-- < end well div>--%>
+                    </div>
+                    <div class="col-md-9">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="">
+            <div class="container">
+                <hr class="inline" />
+                <div class="row copyright">
+                    <div class="col-md-12 center">
+                        <p>
+                            Copyright&nbsp;&nbsp;&copy; <%: DateTime.Now.Day %>-<%: DateTime.Now.Month %>-<%: DateTime.Now.Year %> -Jazira, Saudi Arabia. All Right Reserved<br />
+                            Delevoped By: Bishnu Khaling
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\bin\Debug\JaziraDatabaseLayer.dll
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\bin\Debug\JaziraDatabaseLayer.pdb
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.dll
+E:\Project\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.pdb
+E:\Projectss\JaziraManagement\Jazira\JaziraDatabaseLayer\bin\Debug\JaziraDatabaseLayer.dll
+E:\Projectss\JaziraManagement\Jazira\JaziraDatabaseLayer\bin\Debug\JaziraDatabaseLayer.pdb
+E:\Projectss\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.csprojAssemblyReference.cache
+E:\Projectss\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.csproj.CoreCompileInputs.cache
+E:\Projectss\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.dll
+E:\Projectss\JaziraManagement\Jazira\JaziraDatabaseLayer\obj\Debug\JaziraDatabaseLayer.pdb

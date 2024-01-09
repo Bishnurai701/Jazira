@@ -1,0 +1,261 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Jazira.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> Login </title>
+     <%@ Register TagPrefix="ajax" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+
+         <!-- bootstrap css-->
+    <link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+     <!-- bootstrap js-->
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+     <!-- bootstrap32 dist-css-->
+    <link href="../bootstrapv32/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../bootstrapv32/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../bootstrapv32/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrapv32/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrapv32/docs/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../bootstrapv32/docs/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+     <!-- bootstrap dist-js-->
+    <script src="../bootstrapv32/dist/js/bootstrap.js"></script>
+    <script src="../bootstrapv32/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap dist-js-->
+    <script src="../bootstrapv32/docs/assets/js/customize.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/docs.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/raw-files.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/blob.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/filesaver.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/holder.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/jszip.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/less.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/uglify.min.js"></script>
+    <script src="../bootstrapv32/docs/assets/js/_vendor/ZeroClipboard.min.js"></script>
+
+
+     <!-- bootstrap grunt-js-->
+    <script src="../bootstrapv32/js/affix.js"></script>
+    <script src="../bootstrapv32/js/alert.js"></script>
+    <script src="../bootstrapv32/js/button.js"></script>
+    <script src="../bootstrapv32/js/carousel.js"></script>
+    <script src="../bootstrapv32/js/collapse.js"></script>
+    <script src="../bootstrapv32/js/dropdown.js"></script>
+    <script src="../bootstrapv32/js/modal.js"></script>
+    <script src="../bootstrapv32/js/popover.js"></script>
+    <script src="../bootstrapv32/js/scrollspy.js"></script>
+    <script src="../bootstrapv32/js/tab.js"></script>
+    <script src="../bootstrapv32/js/tooltip.js"></script>
+    <script src="../bootstrapv32/js/transition.js"></script>
+     <!-- bootstrap content-js-->
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+     <!-- bootstrap content-base-js-for progressbar-->
+    <link href="../Content/themes/base/accordion.css" rel="stylesheet" />
+    <link href="../Content/themes/base/button.css" rel="stylesheet" />
+    <link href="../Content/themes/base/datepicker.css" rel="stylesheet" />
+    <link href="../Content/themes/base/draggable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/menu.css" rel="stylesheet" />
+    <link href="../Content/themes/base/progressbar.css" rel="stylesheet" />
+    <link href="../Content/themes/base/resizable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/selectable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/selectmenu.css" rel="stylesheet" />
+    <link href="../Content/themes/base/slider.css" rel="stylesheet" />
+    <link href="../Content/themes/base/sortable.css" rel="stylesheet" />
+    <link href="../Content/themes/base/spinner.css" rel="stylesheet" />
+    <link href="../Content/themes/base/tabs.css" rel="stylesheet" />
+    <link href="../Content/themes/base/theme.css" rel="stylesheet" />
+    <link href="../Content/themes/base/tooltip.css" rel="stylesheet" />
+     <!-- fontawesomr css-->
+    <link href="../font-awesome/css/font-awesome-ie7.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- msAjax minifield-js-->
+    <script src="../msAjax/plugin/minifield/bootstrap.js"></script>
+    <script src="../msAjax/plugin/minifield/bootstrap.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-1.9.1.intellisense.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-1.9.1.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-1.9.1.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.intellisence.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.ui.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.ui.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.min.js"></script>
+    <script src="../msAjax/plugin/minifield/jquery.validate-vsdoc.js"></script>
+    <script src="../msAjax/plugin/minifield/knockout-2.2.0.debug.js"></script>
+    <script src="../msAjax/plugin/minifield/knockout-2.2.0.js"></script>
+    <script src="../msAjax/plugin/minifield/modernizr-2.6.2.js"></script>
+    <script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.js"></script>
+    <script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.min.js"></script>
+     <!-- msAjax css-->
+    <link href="../msAjax/Theme/base/jquery-ui.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.accordion.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.all.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.base.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.button.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.core.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.dialog.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.progressbar.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.resizable.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.selectable.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.slider.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.tabs.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/jquery.ui.theme.css" rel="stylesheet" />
+     <!-- msAjax-minifiled css-->
+    <link href="../msAjax/Theme/base/minifield/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.accordion.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.autocomplete.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.button.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.core.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.datepicker.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.dialog.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.progressbar.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.resizable.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.selectable.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.slider.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.tabs.min.css" rel="stylesheet" />
+    <link href="../msAjax/Theme/base/minifield/jquery.ui.theme.min.css" rel="stylesheet" />
+     <!-- script js-->
+    <script src="../script/_references.js"></script>
+    <script src="../script/bootstrap.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/jquery-1.10.2.intellisense.js"></script>
+    <script src="../script/jquery-1.10.2.js"></script>
+    <script src="../script/jquery-1.10.2.min.js"></script>
+    <script src="../script/modernizr-2.6.2.js"></script>
+    <script src="../script/respond.js"></script>
+    <script src="../script/respond.min.js"></script>
+    <script src="../Scripts/alert.js"></script>
+    <script src="../Scripts/jquery-1.10.2-vsdoc.js"></script>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../Scripts/jquery-1.3.2.min.js"></script>
+    <script src="../Scripts/jquery-2.1.1-vsdoc.js"></script>
+    <script src="../Scripts/jquery-2.1.1.intellisense.js"></script>
+    <script src="../Scripts/jquery-2.1.1.js"></script>
+    <script src="../Scripts/jquery-2.1.1.min.js"></script>
+    <script src="../Scripts/jquery-ui-1.11.1.js"></script>
+    <script src="../Scripts/jquery-ui.min-1.11.1.js"></script>
+    <script src="../Scripts/jquery.blockUI.js"></script>
+     <!-- Style css-->
+    <link href="../style/FileUpload.css" rel="stylesheet" />
+    <link href="../style/ReportViewer.css" rel="stylesheet" />
+    <link href="../style/site.css" rel="stylesheet" />
+    <link href="../style/style.css" rel="stylesheet" />
+
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!--plugin-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>$.support.transition = false</script>
+        <script src="../Scripts/alert.js"></script>
+        <script src="../Scripts/button.js"></script>
+        <script src="../Scripts/collapse.js"></script>
+        <script src="../Scripts/dropdown.js"></script>
+       <script src="../Scripts/modal.js"></script>
+        <script src="../Scripts/popover.js"></script>
+        <script src="../Scripts/scrollspy.js"></script>
+        <script src="../Scripts/tab.js"></script>
+        <script src="../Scripts/tooltip.js"></script>
+        <script src="../Scripts/transition.js"></script>
+
+        <!--this is new bootstrap-->
+        <script src="../msAjax/plugin/minifield/bootstrap.js"></script>
+        <script src="../msAjax/plugin/minifield/bootstrap.min.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-1.9.1.intellisense.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-1.9.1.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-1.9.1.min.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery-ui-1.8.24.min.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery.intellisence.js"></script>
+        <script src="../msAjax/plugin/minifield/jquery.js">
+        </script><script src="../msAjax/plugin/minifield/jquery.min.js"></script><script src="../msAjax/plugin/minifield/jquery.ui.js"></script><script src="../msAjax/plugin/minifield/jquery.ui.min.js"></script><script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.js"></script><script src="../msAjax/plugin/minifield/jquery.unobtrusive.ajax.min.js"></script><script src="../msAjax/plugin/minifield/jquery.validate-vsdoc.js"></script><script src="../msAjax/plugin/minifield/knockout-2.2.0.debug.js"></script><script src="../msAjax/plugin/minifield/knockout-2.2.0.js"></script><script src="../msAjax/plugin/minifield/modernizr-2.6.2.js"></script><script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.js"></script><script src="../msAjax/plugin/minifield/twitter-bootstrap-hover-dropdown.min.js"></script>
+       
+         <link href="../msAjax/Theme/base/jquery-ui.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.accordion.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.all.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.base.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.button.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.core.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.datepicker.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.dialog.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.progressbar.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.resizable.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.selectable.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.slider.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.tabs.css" rel="stylesheet" />
+        <link href="../msAjax/Theme/base/jquery.ui.theme.css" rel="stylesheet" />
+
+        <link href="../bootstrapv32/dist/css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="../bootstrapv32/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="../bootstrapv32/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="../bootstrapv32/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="../bootstrapv32/dist/js/bootstrap.js"></script>
+        <script src="../bootstrapv32/dist/js/bootstrap.min.js"></script>
+
+        <script src="../bootstrapv32/grunt/bs-glyphicons-data-generator.js"></script>
+        <script src="../bootstrapv32/grunt/bs-lessdoc-parser.js"></script>
+        <script src="../bootstrapv32/grunt/bs-raw-files-generator.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../script/bootstrap.js"></script>
+        <script src="../script/bootstrap.min.js"></script>
+        <script src="../script/jquery-1.10.2.intellisense.js"></script>
+        <script src="../script/jquery-1.10.2.js"></script>
+        <script src="../script/jquery-1.10.2.min.js"></script>
+        <script src="../script/modernizr-2.6.2.js"></script>
+        <script src="../script/respond.js"></script>
+        <script src="../script/respond.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../Scripts/bootstrap.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script src="../msAjax/plugin/minifield/bootstrap.js"></script>
+        <script src="../msAjax/plugin/minifield/bootstrap.min.js"></script>
+
+        <link href="../style/site.css" rel="stylesheet" />
+        <link href="../style/style.css" rel="stylesheet" />
+
+    <link href="../bootstrap-3.0.3/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../bootstrap-3.0.3/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../bootstrap-3.0.3/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+ 
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

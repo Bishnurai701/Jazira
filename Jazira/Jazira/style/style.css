@@ -1,0 +1,926 @@
+﻿.main
+{
+    padding: 0px 12px;
+    margin: 0px 8px 8px 8px;
+    min-height: 406px;
+  
+
+}
+form
+{
+   margin-bottom:5px;    
+}
+.alert
+{
+   margin-top:10px;
+   margin-bottom:10px;
+}
+.navbutton
+{
+   
+}
+.navbutton a
+{
+   padding:5px;
+   text-decoration:none;
+   font-size:18px;        
+   transition:text-shadow .2s;
+   -webkit-transition:text-shadow .2s; /* Safari */ 
+}
+.navbutton a:hover
+{
+   text-decoration:none;
+   text-shadow: 0px 0px 1px rgba(61, 110, 115, 1);      
+       
+}
+
+.navbar {
+  margin-bottom: 1px;
+  overflow: visible;
+}
+.navbar-inner {
+  background-color: #FAFAFA;
+  background-image: linear-gradient(to bottom, #c8a4b5,#fff );
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #D4D4D4;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;  
+}
+.nav-header {
+  color: #333333;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 3px 15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+li {
+  line-height: 35px;
+}
+.searchposition {
+  float: right;
+  padding-top: 14px;
+}
+.btn-navbar
+{ 
+    color:#444 !important;
+     background-color:Transparent !important;
+     background-image:none !important;
+}
+
+.btn-navbar:hover,
+.btn-navbar:active
+{
+   background-color:Transparent !important;    
+   color:#C19A6B;
+   background-image:none !important;
+}
+
+.well {
+  background-color: #c8a4b5;
+  border: 1px solid #E3E3E3;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  margin-bottom: 0px;
+  min-height: 480px;
+  
+  /*padding: 19px;*/
+}
+.nav-list {
+  margin-bottom: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nav-list > li > a, .nav-list .nav-header {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font-size:15px;
+}
+.form-horizontal .control-group {
+  margin-bottom: 10px;
+}
+
+/* Hr */
+.hline
+{
+    margin-top:0px;    
+}
+.btn
+{
+    border:solid 1px #fff;    
+}
+.btn-primary-custom
+{ 
+     background-color: hsl(207, 100%, 39%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#058eff", endColorstr="#006dc6"); background-image: -khtml-gradient(linear, left top, left bottom, from(#058eff), to(#006dc6)); background-image: -moz-linear-gradient(top, #058eff, #006dc6); background-image: -ms-linear-gradient(top, #058eff, #006dc6); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #058eff), color-stop(100%, #006dc6)); background-image: -webkit-linear-gradient(top, #058eff, #006dc6); background-image: -o-linear-gradient(top, #058eff, #006dc6); background-image: linear-gradient(#058eff, #006dc6); border-color: #006dc6 #006dc6 hsl(207, 100%, 36%); color: #fff !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19); -webkit-font-smoothing: antialiased;
+}
+.page-heading {
+  color: #0088CC; 
+}
+.page-heading > a
+{
+      color: #0088CC;
+}
+.page-heading a:link,
+.page-heading a:visited 
+ {   
+   color: #0088CC;
+}
+.page-heading a:hover
+{ 
+    text-decoration:none;
+    text-shadow:0px 0px 0.4px #0088CC;
+    
+   
+    
+}
+/************* Table ***************************/
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border:none;
+}
+
+.table th,
+.table td 
+{
+  border:none;
+  padding: 4px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align:middle;  
+  border-top: 1px solid #dddddd;
+}
+.table tr th:last-child,
+.table tr td:last-child 
+{  
+  text-align: center; 
+}
+
+.table tr td:last-child
+{  
+    padding:2px;
+    transition:padding .2s;
+    -webkit-transition:padding .2s; /* Safari */
+}
+
+.table tr td:last-child:hover 
+{  
+   padding:1px;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+.table th a,
+.table td a
+{
+    font-size:16px;
+  
+}
+.table th a:hover,
+.table td a:hover
+{
+   text-decoration:none;   
+}
+
+.table tr:first-child th,
+.table tr:first-child td
+{
+        border-top: 1px solid #0088CC;
+        border-bottom: 1px solid #0088CC;
+        background-color:#0088CC;
+        color:White;
+}
+
+.table tr:last-child th,
+.table tr:last-child td
+{
+        border-bottom: 1px solid #dddddd;
+}
+.table tr td:last-child a
+{
+    font-size:18px;
+   transition:font-size .2s;
+    -webkit-transition:font-size .2s; /* Safari */       
+}
+.table tr td:last-child a:hover
+{
+   font-size:20px;     
+}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 4px;
+}
+
+.table-condensed tr td:last-child
+{  
+    padding:2px !important;
+    transition:padding .2s;
+    -webkit-transition:padding .2s; /* Safari */
+}
+
+.table-condensed tr td:last-child:hover 
+{  
+   padding:1px !important;
+}
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #dddddd;
+}
+
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child,
+.table-bordered tbody:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child,
+.table-bordered tbody:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tbody:last-child tr:last-child > th:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > th:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tbody:last-child tr:last-child > th:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > th:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+}
+
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+  background-color: #f5f5f5;
+}
+.table-hover tbody tr:first-child:hover > td,
+.table-hover tbody tr:first-child:hover > th {
+  background-color: #3388CC;
+}
+
+table td[class*="span"],
+table th[class*="span"],
+.row-fluid table td[class*="span"],
+.row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0;
+}
+
+.table td.span1,
+.table th.span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0;
+}
+
+.table td.span2,
+.table th.span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0;
+}
+
+.table td.span3,
+.table th.span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0;
+}
+
+.table td.span4,
+.table th.span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+
+.table td.span5,
+.table th.span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0;
+}
+
+.table td.span6,
+.table th.span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}
+
+.table td.span7,
+.table th.span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0;
+}
+
+.table td.span8,
+.table th.span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0;
+}
+
+.table td.span9,
+.table th.span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0;
+}
+
+.table td.span10,
+.table th.span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0;
+}
+
+.table td.span11,
+.table th.span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0;
+}
+
+.table td.span12,
+.table th.span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0;
+}
+
+.table tbody tr.success > td {
+  background-color: #dff0d8;
+}
+
+.table tbody tr.error > td {
+  background-color: #f2dede;
+}
+
+.table tbody tr.warning > td {
+  background-color: #fcf8e3;
+}
+
+.table tbody tr.info > td {
+  background-color: #d9edf7;
+}
+
+.table-hover tbody tr.success:hover > td {
+  background-color: #d0e9c6;
+}
+
+.table-hover tbody tr.error:hover > td {
+  background-color: #ebcccc;
+}
+
+.table-hover tbody tr.warning:hover > td {
+  background-color: #faf2cc;
+}
+
+.table-hover tbody tr.info:hover > td {
+  background-color: #c4e3f3;
+}
+
+/* Pagination */
+.table .pagination th,
+.table .pagination td
+{ 
+    padding:2px !important;
+    background-color:#0088CC !important;
+    color:#fff !important;    
+}
+
+.table .pagination th:hover,
+.table .pagination td:hover
+{
+    behavior: none;
+    padding:2px !important;    
+}
+
+.table .pagination table td
+{
+    border:none !important;    
+    font-size:18px !important;
+}
+.table .pagination table td span
+{
+  text-decoration:underline; 
+}
+.table .pagination table td a
+{
+    color:#fff !important;    
+}
+
+
+/***************** Start Of Calender Extender *******/   
+   
+ .CalendarExtender .ajax__calendar_container   
+ {
+     cursor: default;
+font-family: tahoma,verdana,helvetica;
+font-size: 11px;
+padding: 4px;
+position: absolute;
+text-align: center;
+width: 170px;
+background: #ebf1f6; /* Old browsers */
+background: -moz-linear-gradient(top,  #ebf1f6 0%, #abd3ee 35%, #89c3eb 61%, #d5ebfb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(35%,#abd3ee), color-stop(61%,#89c3eb), color-stop(100%,#d5ebfb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ebf1f6 0%,#abd3ee 35%,#89c3eb 61%,#d5ebfb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ebf1f6 0%,#abd3ee 35%,#89c3eb 61%,#d5ebfb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ebf1f6 0%,#abd3ee 35%,#89c3eb 61%,#d5ebfb 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 35%,#89c3eb 61%,#d5ebfb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+
+border:1px solid #89c3eb;
+}
+
+.CalendarExtender .ajax__calendar_header  {
+margin-bottom: 4px;
+height: 20px;
+width: 100%;
+}
+.CalendarExtender .ajax__calendar_footer {
+  height: 15px;
+}
+.CalendarExtender .ajax__calendar_title,
+.CalendarExtender .ajax__calendar_next,
+.CalendarExtender .ajax__calendar_prev    {
+color: #004080;
+padding-top: 3px;
+}
+.CalendarExtender .ajax__calendar_prev  
+{
+    background-image: url("../img/glyphicons-halflings-white.png");
+    background-position: -432px -72px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 15px;
+    width: 15px;
+}
+
+.CalendarExtender .ajax__calendar_next {
+  background-image: url("../img/glyphicons-halflings-white.png");
+  background-position: -456px -72px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: right;
+  height: 15px;
+  width: 15px;
+}
+.CalendarExtender .ajax__calendar_title {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.CalendarExtender .ajax__calendar_body    
+{         
+    border: solid 0px #77D5F7; 
+  height: 139px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 170px;
+}
+.CalendarExtender .ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years {
+  height: 139px !important;
+  left: 0 !important;
+  margin: auto !important;
+  position: absolute !important;
+  text-align: center !important;  
+  width: 170px !important;
+}
+.CalendarExtender .ajax__calendar_year {
+  cursor: pointer;
+  height: 44px;
+  overflow: hidden;
+  text-align: center;
+  width: 40px;
+}
+.CalendarExtender .ajax__calendar_month {
+  cursor: pointer;
+  height: 44px;
+  overflow: hidden;
+  text-align: center;
+  width: 40px;
+}
+.CalendarExtender .ajax__calendar_body table    
+{    
+    border-collapse:separate;     
+    border:none;   
+    font-size: 11px;
+}
+.CalendarExtender .ajax__calendar_days table thead,
+.CalendarExtender .ajax__calendar_days table tfoot,
+.CalendarExtender .ajax__calendar_days table tbody td
+{
+    border:none !important;
+    }
+.CalendarExtender .ajax__calendar_body table:hover th,
+.CalendarExtender .ajax__calendar_body table:hover td
+{
+    background-color:transparent !important;
+    border-style:none;
+    box-shadow:none !important;
+}
+.CalendarExtender .ajax__calendar_body table tr,
+.CalendarExtender .ajax__calendar_body table th,
+.CalendarExtender .ajax__calendar_body table td
+ {
+    padding:.5px;
+    border-style:none;
+    box-shadow:0 0 0 !important;
+    background-color:transparent !important;
+}
+
+.CalendarExtender .ajax__calendar_dayname {
+text-align:center;
+font-weight:bold;
+margin-bottom: 4px;
+margin-top: 2px;
+color: #004080;
+}
+
+.CalendarExtender .ajax__calendar_hover .ajax__calendar_day,
+.CalendarExtender .ajax__calendar_hover .ajax__calendar_month,
+.CalendarExtender .ajax__calendar_hover .ajax__calendar_year,
+.CalendarExtender .ajax__calendar_active  {
+color: #004080;
+font-weight: bold;
+background-color: #DEF1F4;
+}
+
+
+.CalendarExtender .ajax__calendar_days {
+color: #004080;
+text-align:center;
+
+}
+.CalendarExtender .ajax__calendar_day {
+  cursor: pointer;
+  height: 17px;
+  padding: 0 2px;
+  text-align: right;
+  width: 18px;
+}
+
+.CalendarExtender .ajax__calendar_today   {
+font-weight:bold;
+  cursor: pointer;
+  padding-top: 3px;
+
+}
+
+.CalendarExtender .ajax__calendar_other,
+.CalendarExtender .ajax__calendar_hover .ajax__calendar_today,
+.CalendarExtender .ajax__calendar_hover .ajax__calendar_title {
+color: #000;
+}
+.CalendarExtender .ajax__calendar_dayname {
+  height: 17px;
+  padding: 0 2px;
+  text-align: right;
+  width: 17px;
+}
+
+.CalendarExtender .ajax__calendar_month {
+  cursor: pointer;
+  height: 44px;
+  overflow: hidden;
+  text-align: center;
+  width: 40px;
+}
+/* End Of Calender Extender*/
+
+/************ Student FieldSet And Legend ****************/
+.mainfieldset {  
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom:10px;
+  border-radius:5px;  
+  background:#FAFAFA;
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(49,50,51,1);
+  -moz-box-shadow: inset 0px 0px 5px 0px rgba(49,50,51,1);
+  box-shadow: inset 0px 0px 5px 0px rgba(49,50,51,1);
+}
+.mainlegend {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color -moz-use-text-color #E5E5E5;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 1px;
+  color: #0088CC;
+  display: block;
+  float: inherit;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 7px;
+  overflow: auto;
+  padding: 12px 0 5px 10px;
+  width: 99%;
+}
+.mainlegend i {
+  font-weight: bold;
+  text-shadow: 3px 1px 7px #888;
+}
+.studentfieldset {
+  border: 1px solid #0088CC;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius:5px; 
+}
+
+
+
+.studentlegend {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color -moz-use-text-color #E5E5E5;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 0;
+  color: #0088CC;
+  display: block;
+  float: inherit;
+  font-size: 15px;
+  font-weight:normal;
+  line-height: 32px;
+  margin-bottom: 0px;
+  overflow: auto;
+  padding: 0 3px;
+  width: auto;
+}
+
+.academic table th,
+.academic table td {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #0088CC -moz-use-text-color -moz-use-text-color;
+  border-image: none;
+  border-right: medium none;
+  border-style: solid none none;
+  border-width: 2px medium medium;
+  line-height: 20px;
+  padding: 4px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/*this is silver inventorydash page css*/
+.gridboxsilver 
+{
+   float:left;
+    min-width:100px !important;
+    width:100%;
+    height:190px;  
+     border:1.5px solid #ddd;  
+    /*border:solid 2px #A9CF48;*/
+    border-radius: 15px;   
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; 
+    transition:margin-top 1s, box-shadow 1s;    
+   -webkit-transition:margin-top 1s, box-shadow 1s;  
+   transition-delay:.5s;
+    -webkit-transition-delay:.5s;
+     background-color:#fff;
+    /*background: rgb(252,255,244);*/
+    position:relative;
+    margin:30px 0px 10px 0px;     
+}
+.gridboxsilver:hover 
+    {
+    margin-top:0px;   
+    box-shadow:0 0 5px #A9CF48;
+    }
+.gridboxsilver-medium 
+{
+     height:100px !important;
+     padding-bottom:5px;
+}
+.gridboxsilver-small 
+{
+    height:60px !important;
+    padding:3px;
+    vertical-align:middle;
+}
+
+a:hover 
+{
+   text-decoration:none !important;   
+   border-color :#027be4;
+}
+.silver {
+    float: none;
+    background: url("../image/IconTime.ico") no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 100%;
+    clear: both;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.silver1 
+{
+    float: none;
+    background: url("../image/IconTools1.ico") no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 100%;
+    clear: both;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.silver2 
+{
+    float: none;
+    background: url("../image/IconVehicle2.ico") no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 100%;
+    clear: both;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.silver3 
+{
+    float: none;
+    background: url("../image/IconHumanResource.ico") no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 100%;
+    clear: both;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.btntext 
+{
+  font-family:Calibri;
+  line-height:20px;
+  padding-top:5px;    
+  position:relative; 
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align:center;      
+  color: #0088cc;
+  text-shadow: 0px 1px 8px rgba(61, 122, 59, 0.98);
+  padding-top:10px;
+}
+.subtitle 
+{
+    font-size:1.2em;  
+   text-align:center;
+   display:none;     
+   padding-top:150px;   
+   padding-left:3px;
+   padding-right:3px;
+   font-weight:bold;
+}
+a:hover .subtitle 
+{
+    display:block;
+    
+}
+.loginborder 
+{
+    background-color:#f0f0f0;
+    border-radius: 32px 32px 32px 32px;
+    -moz-border-radius: 32px 32px 32px 32px;
+    -webkit-border-radius: 32px 32px 32px 32px;
+    border: 1px dashed #000000;
+    /*border: 0px solid #000000;*/
+}
+ .divgridbutton
+     {
+      width:auto;              
+      padding:7px 10px 7px 10px;
+      font-weight:normal;
+      font-family:Calibri;
+      }

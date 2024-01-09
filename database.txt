@@ -1,0 +1,28 @@
+DATABASE:jjfadmin/jaziradb
+user	: admin/jazira/sa/admin/admin
+pw	: adminnn/admin/sa/adminn/admin2/admin1
+---------------------------------------
+-------LABMAST.MDB----->Jaziradb-------
+---------------------------------------
+TYPEMAST-	Tbl_TypeMast
+TBLWSEC-	Tbl_WorkingSection
+TONESAHAPE-	Tbl_StoneShape
+STONECUT-	Tbl_StoneCUT
+STONECOLOR-	Tbl_StoneColor
+STONECLARITY-	Tbl_StoneClearity
+SERIALMASR-	Tbl_SerialMast
+SECTION-	Tbl_Section
+SALTYPE-	TblSalaryType
+ORNMASR-	Tbl_MasterOrnament
+GOLDTYPE-	Tbl_GoldType
+TBLGROUPCODE-	Tbl_GroupCode
+TBLGROUPCODEO-	Tbl_GroupCodeO
+FORMMAST	Tbl_Form
+USERRIGHTS	Tbl_UserPermission
+
+
+
+---------------------------------------
+-----LABmmyyyy.MDB--->Jazirammyyyy-----
+---------------------------------------
+TBLUNNO-	Tbl_UniqueNo
